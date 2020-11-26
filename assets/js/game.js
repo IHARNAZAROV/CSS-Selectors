@@ -4,7 +4,6 @@ const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 const hintText = document.querySelector('#modal-text');
-// const modalHintText = document.querySelector('#')
 const image = document.querySelector('#image');
 let currentQuestion = {};
 let acceptingAnswers = true;

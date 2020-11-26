@@ -8,7 +8,7 @@ const time = date.toLocaleTimeString('ru-RU', {
 timeEl.textContent = time;
 
 function displayIframe() {
-  document.getElementById('iframeDisplay').innerHTML = '<iframe src="./assets/html/start.html" target="_parent"  marginwidth="0" marginheight="0" scrolling="auto" onload="" width="950px" height="630px"  allowtransparency="false" ></iframe>';
+  document.getElementById('iframeDisplay').innerHTML = '<iframe src="./assets/html/start.html" target="_parent"  marginwidth="0" marginheight="0" scrolling="auto" onload="" width="900em" height="600em"  allowtransparency="false" ></iframe>';
 }
 
 const exampleWindow = document.getElementById('iframeDisplay');
