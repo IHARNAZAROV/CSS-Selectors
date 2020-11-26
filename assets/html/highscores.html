@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors High Scores</title>
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/highscores.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Page Transition -->
+    <svg id="fader"></svg>
+    <script>
+        fadeInPage();
+
+        function fadeInPage() {
+            if (!window.AnimationEvent) {}
+            const fader = document.getElementById('fader');
+            fader.classList.add('fade-out');
+        }
+    </script>
+      <!-- End Page Transition -->
+    <div class="container">
+        <div id="highScores" class="flex-center flex-column">
+            <h1 id="finalScore">Leaderboard</h1>
+            <ul id="highScoresList"></ul>
+            <a href="/assets/html/start.html" class="button">Go Home<i class="fas fa-home"></i></a>
+        </div>
+    </div>
+    <script src="/assets/js/highscores.js"></script>
+</body>
+
+</html>

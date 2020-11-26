@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="./assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Page Transition -->
+    <svg id="fader"></svg>
+    <script>
+        fadeInPage();
+
+        function fadeInPage() {
+            if (!window.AnimationEvent) {}
+            const fader = document.getElementById('fader');
+            fader.classList.add('fade-out');
+        }
+    </script>
+    <!-- End Page Transition -->
+
+    <div class="desktop" id="container">
+        <div class="desktop-applications">
+            <button onclick="displayIframe()" class="desk-item" id="item">
+                <img src="/assets/images/css.png" alt="">
+                <p>CSS Selectors</p>
+            </button>
+            <div id="iframeDisplay"></div>
+            <div class="desk-item">
+                <img src="/assets/images/my_computer.png" alt="">
+                <p>My Computer</p>
+            </div>
+            <div class="desk-item">
+                <img src="/assets/images/recycle_bin.png" alt="">
+                <p>Recycle Bin</p>
+            </div>
+        </div>
+
+        <div class="windows-bar">
+
+            <button class="button-start-menu">
+                <img src="/assets/images/Windows_logo.png" alt="">
+                start
+            </button>
+            <ul class="applications">
+                <li><img src="/assets/images/exploraricone.png" alt="internet explorer icon"></li>
+                <li><img src="/assets/images/editor.png" alt="text editor icon"></li>
+                <li><img src="/assets/images/mozila-icon.png" alt="mozila icon"></li>
+                <li><img src="/assets/images/trash.ico" alt=""></li>
+            </ul>
+            <div class="blur-right-bar">
+                <ul class="blur-right-bar-applications">
+                    <li><img src="/assets/images/msn.png" alt="internet explorer icon"></li>
+                    <li><img src="/assets/images/my_computer.png" alt="internet explorer icon"></li>
+                    <li><img src="/assets/images/my_network_places.png" alt="internet explorer icon"></li>
+                </ul>
+                <span class="time">
+                    14:34
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

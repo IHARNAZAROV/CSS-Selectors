@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Result</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Page Transition -->
+    <svg id="fader"></svg>
+    <script>
+        fadeInPage();
+
+        function fadeInPage() {
+            if (!window.AnimationEvent) {}
+            const fader = document.getElementById('fader');
+            fader.classList.add('fade-out');
+        }
+    </script>
+    <!-- End Page Transition -->
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">0</h1>
+            <form class="end-form-container">
+                <h2 id="end-text">Enter your name to save your score!</h2>
+                <input type="text" name="name" id="username" placeholder="Enter your name">
+                <button class="button" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save<i
+                        class="fas fa-save fa-1x"></i></button>
+            </form>
+            <a href="/assets/html/game.html" class="button">Play Again<i class="fas fa-sync-alt fa-1x"></i></a>
+            <a href="/" class="button">Go Home<i class="fas fa-home"></i></a>
+        </div>
+    </div>
+    <script src="/assets/js/end.js"></script>
+</body>
+
+</html>

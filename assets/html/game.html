@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Game</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Page Transition -->
+    <svg id="fader"></svg>
+    <script>
+        fadeInPage();
+
+        function fadeInPage() {
+            if (!window.AnimationEvent) {}
+            const fader = document.getElementById('fader');
+            fader.classList.add('fade-out');
+        }
+    </script>
+    <!-- End Page Transition -->
+
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+
+                <div class="modal-container">
+                    <input id="modal-toggle" type="checkbox">
+
+                    <label class="modal-button button-help" for="modal-toggle">Help<i
+                            class="fas fa-question-circle fa-1x"></i></label>
+                    <label class="modal-backdrop" for="modal-toggle"></label>
+                    <div class="modal-content">
+                        <label class="modal-close" for="modal-toggle">&#x2715;</label>
+                        <h2>Help CSS Selectors</h2>
+                        <hr />
+                        <p id="modal-text">CSS Selectors</p>
+                        <img id="image">
+                        <label class="modal-content-button" for="modal-toggle">OK</label>
+                    </div>
+                </div>
+     
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+
+            <h1 id="question">What is the answer to this question</h1>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1">Choice</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4">Choice 4</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/game.js"></script>
+</body>
+
+</html>
