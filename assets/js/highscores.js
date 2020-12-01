@@ -1,4 +1,4 @@
-const highScoresList = document.querySelector('#highScoresList');
-const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+const highScoreList = document.querySelector('#highScoreList');
+const highScore = JSON.parse(localStorage.getItem('highScore')) || [];
 
-highScoresList.innerHTML = highScores.map((score) => `<li class="high-score">${score.name} - ${score.score} points </li>`).join('');
+highScoreList.innerHTML = highScore.map((score) => `<li class="high-score">${score.name} - ${score.score} points </li>`).join('');

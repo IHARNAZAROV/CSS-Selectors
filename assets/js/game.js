@@ -19,7 +19,7 @@ const questions = [
     choice3: 'Selects all buttons inside of divs which are inside of divs',
     choice4: 'Selects all divs which contain divs which contain buttons',
     answer: 3,
-    hint: 'This is answer  2 + 2? ',
+    hint: 'all buttons inside of divs which are inside of divs',
     image: '/assets/images/help images/question 1.png',
   },
   {
@@ -29,7 +29,7 @@ const questions = [
     choice3: 'Selects all elements with a class of "box" which contain an img',
     choice4: 'Selects all img tags that are inside an element with a class of "box"',
     answer: 4,
-    hint: 'This is quiz tery The tallest building',
+    hint: 'all img tags that are inside an element with a class of "box"',
     image: '/assets/images/help images/question 2.png',
   },
   {
@@ -39,7 +39,7 @@ const questions = [
     choice3: 'Selects all elements with an ID of "title" which are inside divs which have a class of "box" and "container"',
     choice4: 'Selects all elements with an ID of "title" which are inside divs which have a class of "box" or "container"',
     answer: 1,
-    hint: 'This is quiz What percent of American adults',
+    hint: ' all elements with an ID of "title"',
     image: '/assets/images/help images/question 3.png',
   },
   {
@@ -49,7 +49,7 @@ const questions = [
     choice3: 'Selects all divs which contain h1',
     choice4: 'Selects all h1 which are inside divs',
     answer: 4,
-    hint: 'This is quiz Approximately what percent ',
+    hint: 'all h1 which are inside divs',
     image: '/assets/images/help images/question 4.png',
   },
   {
@@ -59,7 +59,7 @@ const questions = [
     choice3: 'An element selector, selecting all images on your site',
     choice4: 'An element selector, selecting all img tags on your site',
     answer: 4,
-    hint: 'This is quiz Approximately what percent ',
+    hint: 'all img tags on your site',
     image: '/assets/images/help images/question 5.png',
   },
   {
@@ -69,7 +69,7 @@ const questions = [
     choice3: 'Selects all "li" which are the second child of a "ul"',
     choice4: 'Selects all "ul" which only contain 2 "li"',
     answer: 3,
-    hint: 'This is quiz What percent of American adults',
+    hint: 'all "li" which are the second child of a "ul"',
     image: '/assets/images/help images/question 6.png',
   },
   {
@@ -79,7 +79,7 @@ const questions = [
     choice3: 'Selects all buttons which are not the direct children of divs',
     choice4: 'Selects all divs which do not have buttons',
     answer: 2,
-    hint: 'This is quiz Approximately what percent ',
+    hint: 'all buttons which are the direct children of divs',
     image: '/assets/images/help images/question 7.png',
   },
   {
@@ -89,7 +89,7 @@ const questions = [
     choice3: 'Selects all elements with a class of "box" which do not contain an element with a class of "container" which does not contain an img with an ID of "profile"',
     choice4: 'Selects an img with an ID of "profile" which is the direct child of an element with a class of "container" which is a direct child of an element with a class of "box"',
     answer: 4,
-    hint: 'This is quiz Approximately what percent ',
+    hint: 'img with an ID of "profile" which is the direct child of an element',
     image: '/assets/images/help images/question 8.png',
   },
   {
@@ -99,7 +99,7 @@ const questions = [
     choice3: 'Selects all divs with an ID of "cta" which contains a div with a class of "box" which contains an image with a class of "thumbnail"',
     choice4: 'Selects all images with a class of "thumbnail" which are inside divs with a class of "box" which are insive divs with an ID of "cta"',
     answer: 4,
-    hint: 'This is quiz Approximately what percent ',
+    hint: 'Selects all images with a class of "thumbnail"',
     image: '/assets/images/help images/question 9.png',
   },
   {
@@ -109,7 +109,7 @@ const questions = [
     choice3: 'Selects all h1, all h3, and all divs with a class of "box"',
     choice4: 'Selects all h1, all h3, all divs, and all elements with an ID of "box"',
     answer: 3,
-    hint: 'This is answer  2 + 2? ',
+    hint: 'all h1, all h3, and all divs with a class of "box"',
     image: '/assets/images/help images/question 10.png',
   },
 ];
